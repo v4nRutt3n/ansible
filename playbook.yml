@@ -1,5 +1,5 @@
 ---
-- hosts: server1
+- hosts: all
   tasks: 
     - name: install vim
       yum:
