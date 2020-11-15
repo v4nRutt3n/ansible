@@ -1,0 +1,12 @@
+---
+- hosts: server1
+  tasks: 
+    - name: install vim
+      yum:
+        name: vim
+        state: absent
+      register: vim_install
+
+    - name: output 
+      debug: var=vim_install
+
