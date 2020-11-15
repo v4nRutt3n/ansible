@@ -4,7 +4,7 @@
     - name: install vim
       yum:
         name: vim
-        state: lastest
+        state: latest
       register: vim_install
 
     - name: output 
